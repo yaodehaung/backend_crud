@@ -1,0 +1,366 @@
+[Tue Mar 08 2016 17:46:05 GMT+0800 (CST)] /archive
+TypeError: /home/yaodehaung/code/research/node/N-blog/views/archive.ejs:5
+    3| <% var lastYear = 0 %>
+    4| <% posts.forEach(function (post, index) { %>
+ >> 5|   <% if (lastYear != post.time.year) { %>
+    6|     <li><h3><%= post.time.year %></h3></li>
+    7|   <% lastYear=post.time.year } %>
+    8|   <li><time><%= post.time.day %></time></li>
+
+Cannot read property 'year' of undefined
+    at eval (eval at <anonymous> (/home/yaodehaung/code/research/node/N-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:32:227)
+    at Array.forEach (native)
+    at eval (eval at <anonymous> (/home/yaodehaung/code/research/node/N-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:32:132)
+    at eval (eval at <anonymous> (/home/yaodehaung/code/research/node/N-blog/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:35)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.render (/home/yaodehaung/code/research/node/N-blog/node_modules/ejs/lib/ejs.js:293:13)
+    at View.exports.renderFile [as engine] (/home/yaodehaung/code/research/node/N-blog/node_modules/ejs/lib/ejs.js:323:20)
+    at View.render (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/view.js:93:8)
+    at EventEmitter.app.render (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/application.js:530:10)
+    at ServerResponse.res.render (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/response.js:904:7)
+[Tue Mar 08 2016 22:16:25 GMT+0800 (CST)] /login
+TypeError: Not a string or buffer
+    at TypeError (native)
+    at Hash.update (crypto.js:70:16)
+    at /home/yaodehaung/code/research/node/N-blog/routes/index.js:90:24
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:235:24
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:313:12)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:229:12
+[Tue Mar 08 2016 22:19:11 GMT+0800 (CST)] /post
+TypeError: Cannot read property 'name' of undefined
+    at /home/yaodehaung/code/research/node/N-blog/routes/index.js:123:36
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:235:24
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:313:12)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:229:12
+    at Function.match_layer (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:296:3)
+    at next (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:190:10)
+[Tue Mar 08 2016 22:19:15 GMT+0800 (CST)] /post
+TypeError: Cannot read property 'name' of undefined
+    at /home/yaodehaung/code/research/node/N-blog/routes/index.js:123:36
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:235:24
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:313:12)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:229:12
+    at Function.match_layer (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:296:3)
+    at next (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:190:10)
+[Tue Mar 08 2016 22:19:20 GMT+0800 (CST)] /post
+TypeError: Cannot read property 'name' of undefined
+    at /home/yaodehaung/code/research/node/N-blog/routes/index.js:123:36
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:235:24
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:313:12)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:229:12
+    at Function.match_layer (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:296:3)
+    at next (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:190:10)
+[Tue Mar 08 2016 22:19:31 GMT+0800 (CST)] /login
+TypeError: Not a string or buffer
+    at TypeError (native)
+    at Hash.update (crypto.js:70:16)
+    at /home/yaodehaung/code/research/node/N-blog/routes/index.js:90:24
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:235:24
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:313:12)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:229:12
+[Tue Mar 08 2016 22:51:57 GMT+0800 (CST)] /post
+Error: db object already connecting, open cannot be called multiple times
+    at Db.open (/home/yaodehaung/code/research/node/N-blog/node_modules/mongodb/lib/mongodb/db.js:258:11)
+    at Post.save (/home/yaodehaung/code/research/node/N-blog/models/post.js:37:11)
+    at /home/yaodehaung/code/research/node/N-blog/routes/index.js:123:10
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:235:24
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:313:12)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:229:12
+[Tue Mar 08 2016 23:53:32 GMT+0800 (CST)] /u/text/2016-3-8/adf
+Error: db object already connecting, open cannot be called multiple times
+    at Db.open (/home/yaodehaung/code/research/node/N-blog/node_modules/mongodb/lib/mongodb/db.js:258:11)
+    at Function.Post.getOne (/home/yaodehaung/code/research/node/N-blog/models/post.js:106:11)
+    at /home/yaodehaung/code/research/node/N-blog/routes/index.js:63:10
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:235:24
+    at param (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:332:14)
+    at param (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:348:14)
+[Tue Mar 08 2016 23:55:22 GMT+0800 (CST)] /archive
+Error: db object already connecting, open cannot be called multiple times
+    at Db.open (/home/yaodehaung/code/research/node/N-blog/node_modules/mongodb/lib/mongodb/db.js:258:11)
+    at Function.Post.getArchive (/home/yaodehaung/code/research/node/N-blog/models/post.js:282:11)
+    at /home/yaodehaung/code/research/node/N-blog/routes/index.js:46:10
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:235:24
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:313:12)
+    at /home/yaodehaung/code/research/node/N-blog/node_modules/express/lib/router/index.js:229:12
+[Wed Mar 09 2016 13:59:58 GMT+0800 (CST)] /edit/6dfb133be45720112229ed7
+ReferenceError: ObjectID is not defined
+    at Function.Post.update (/home/yaodehaung/code/research/node/test/models/post.js:95:22)
+    at /home/yaodehaung/code/research/node/test/routes/index.js:49:10
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:235:24
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:332:14)
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:348:14)
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:392:3)
+[Wed Mar 09 2016 14:00:31 GMT+0800 (CST)] /edit/6dfb133be45720112229ed7
+ReferenceError: ObjectID is not defined
+    at Function.Post.update (/home/yaodehaung/code/research/node/test/models/post.js:95:22)
+    at /home/yaodehaung/code/research/node/test/routes/index.js:49:10
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:235:24
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:332:14)
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:348:14)
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:392:3)
+[Wed Mar 09 2016 14:00:33 GMT+0800 (CST)] /edit/6dfb133be45720112229ed7
+ReferenceError: ObjectID is not defined
+    at Function.Post.update (/home/yaodehaung/code/research/node/test/models/post.js:95:22)
+    at /home/yaodehaung/code/research/node/test/routes/index.js:49:10
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:235:24
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:332:14)
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:348:14)
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:392:3)
+[Wed Mar 09 2016 14:07:03 GMT+0800 (CST)] /edit/6dfb133be45720112229ed7
+ReferenceError: ObjectID is not defined
+    at Function.Post.update (/home/yaodehaung/code/research/node/test/models/post.js:95:22)
+    at /home/yaodehaung/code/research/node/test/routes/index.js:49:10
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:235:24
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:332:14)
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:348:14)
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:392:3)
+[Wed Mar 09 2016 14:22:51 GMT+0800 (CST)] /archive/%E3%84%8E%E3%84%8E%E3%84%8E
+Error: db object already connecting, open cannot be called multiple times
+    at Db.open (/home/yaodehaung/code/research/node/test/node_modules/mongodb/lib/mongodb/db.js:258:11)
+    at Function.Post.getOne (/home/yaodehaung/code/research/node/test/models/post.js:194:11)
+    at /home/yaodehaung/code/research/node/test/routes/index.js:34:10
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:235:24
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:332:14)
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:348:14)
+[Wed Mar 09 2016 14:26:15 GMT+0800 (CST)] /archive/%E3%84%8E%E3%84%8E%E3%84%8E
+Error: db object already connecting, open cannot be called multiple times
+    at Db.open (/home/yaodehaung/code/research/node/test/node_modules/mongodb/lib/mongodb/db.js:258:11)
+    at Function.Post.getOne (/home/yaodehaung/code/research/node/test/models/post.js:192:11)
+    at /home/yaodehaung/code/research/node/test/routes/index.js:34:10
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:235:24
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:332:14)
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:348:14)
+[Wed Mar 09 2016 14:30:46 GMT+0800 (CST)] /archive/%E3%84%8E%E3%84%8E%E3%84%8E
+Error: db object already connecting, open cannot be called multiple times
+    at Db.open (/home/yaodehaung/code/research/node/test/node_modules/mongodb/lib/mongodb/db.js:258:11)
+    at Function.Post.getOne (/home/yaodehaung/code/research/node/test/models/post.js:194:11)
+    at /home/yaodehaung/code/research/node/test/routes/index.js:34:10
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:235:24
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:332:14)
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:348:14)
+[Wed Mar 09 2016 14:31:28 GMT+0800 (CST)] /archive/%E3%84%8E%E3%84%8E%E3%84%8E
+Error: db object already connecting, open cannot be called multiple times
+    at Db.open (/home/yaodehaung/code/research/node/test/node_modules/mongodb/lib/mongodb/db.js:258:11)
+    at Function.Post.getOne (/home/yaodehaung/code/research/node/test/models/post.js:194:11)
+    at /home/yaodehaung/code/research/node/test/routes/index.js:34:10
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:235:24
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:332:14)
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:348:14)
+[Wed Mar 09 2016 15:08:35 GMT+0800 (CST)] /archive/s
+ReferenceError: /home/yaodehaung/code/research/node/test/views/article.ejs:11
+    9|     <% if ((post.reprint_info.reprint_from != undefined) && (user.name == post.reprint_info.reprint_from.name)) { %>
+    10|       <% flag = 0 %>
+ >> 11|     <% } %>
+    12|     <% if ((post.reprint_info.reprint_to != undefined)) { %>
+    13|       <% post.reprint_info.reprint_to.forEach(function (reprint_to, index) { %>
+    14|         <% if (user.name == reprint_to.name) { %>
+
+title is not defined
+    at eval (eval at <anonymous> (/home/yaodehaung/code/research/node/test/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:31:211)
+    at eval (eval at <anonymous> (/home/yaodehaung/code/research/node/test/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:32:23)
+    at eval (eval at <anonymous> (/home/yaodehaung/code/research/node/test/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:36:35)
+    at exports.compile (/home/yaodehaung/code/research/node/test/node_modules/ejs/lib/ejs.js:255:15)
+    at Object.exports.render (/home/yaodehaung/code/research/node/test/node_modules/ejs/lib/ejs.js:293:13)
+    at View.exports.renderFile [as engine] (/home/yaodehaung/code/research/node/test/node_modules/ejs/lib/ejs.js:323:20)
+    at View.render (/home/yaodehaung/code/research/node/test/node_modules/express/lib/view.js:93:8)
+    at EventEmitter.app.render (/home/yaodehaung/code/research/node/test/node_modules/express/lib/application.js:530:10)
+    at ServerResponse.res.render (/home/yaodehaung/code/research/node/test/node_modules/express/lib/response.js:904:7)
+    at /home/yaodehaung/code/research/node/test/routes/index.js:39:12
+[Wed Mar 09 2016 15:08:39 GMT+0800 (CST)] /archive/s
+ReferenceError: /home/yaodehaung/code/research/node/test/views/article.ejs:11
+    9|     <% if ((post.reprint_info.reprint_from != undefined) && (user.name == post.reprint_info.reprint_from.name)) { %>
+    10|       <% flag = 0 %>
+ >> 11|     <% } %>
+    12|     <% if ((post.reprint_info.reprint_to != undefined)) { %>
+    13|       <% post.reprint_info.reprint_to.forEach(function (reprint_to, index) { %>
+    14|         <% if (user.name == reprint_to.name) { %>
+
+title is not defined
+    at eval (eval at <anonymous> (/home/yaodehaung/code/research/node/test/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:31:211)
+    at eval (eval at <anonymous> (/home/yaodehaung/code/research/node/test/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:32:23)
+    at eval (eval at <anonymous> (/home/yaodehaung/code/research/node/test/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:36:35)
+    at exports.compile (/home/yaodehaung/code/research/node/test/node_modules/ejs/lib/ejs.js:255:15)
+    at Object.exports.render (/home/yaodehaung/code/research/node/test/node_modules/ejs/lib/ejs.js:293:13)
+    at View.exports.renderFile [as engine] (/home/yaodehaung/code/research/node/test/node_modules/ejs/lib/ejs.js:323:20)
+    at View.render (/home/yaodehaung/code/research/node/test/node_modules/express/lib/view.js:93:8)
+    at EventEmitter.app.render (/home/yaodehaung/code/research/node/test/node_modules/express/lib/application.js:530:10)
+    at ServerResponse.res.render (/home/yaodehaung/code/research/node/test/node_modules/express/lib/response.js:904:7)
+    at /home/yaodehaung/code/research/node/test/routes/index.js:39:12
+[Wed Mar 09 2016 20:15:47 GMT+0800 (CST)] /archive/s
+Error: Error setting TTL index on collection : sessions
+    at /home/yaodehaung/code/research/node/test/node_modules/connect-mongo/lib/connect-mongo.js:161:23
+    at /home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1404:28
+    at /home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1542:30
+    at /home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:159:22
+    at commandHandler (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:678:48)
+    at Db._executeQueryCommand (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1802:12)
+    at Cursor.nextObject (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:729:13)
+    at Cursor.toArray (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:158:10)
+    at Cursor.toArray (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/scope.js:10:20)
+    at /home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1541:65
+[Wed Mar 09 2016 21:19:22 GMT+0800 (CST)] /archive/56e0213ac1064e12353573e6
+ReferenceError: ObjectID is not defined
+    at Function.Post.getOne (/home/yaodehaung/code/research/node/test/models/post.js:194:18)
+    at /home/yaodehaung/code/research/node/test/routes/index.js:34:11
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:235:24
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:332:14)
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:348:14)
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:392:3)
+[Wed Mar 09 2016 21:19:26 GMT+0800 (CST)] /archive/56e0213ac1064e12353573e6
+ReferenceError: ObjectID is not defined
+    at Function.Post.getOne (/home/yaodehaung/code/research/node/test/models/post.js:194:18)
+    at /home/yaodehaung/code/research/node/test/routes/index.js:34:11
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:235:24
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:332:14)
+    at param (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:348:14)
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:392:3)
+[Thu Mar 10 2016 13:48:13 GMT+0800 (CST)] /
+Error: ENOENT: no such file or directory, stat '/home/yaodehaung/code/research/node/test/crud.html'
+    at Error (native)
+[Thu Mar 10 2016 13:49:45 GMT+0800 (CST)] /
+Error: ENOENT: no such file or directory, stat '/home/yaodehaung/code/research/node/test/crud.html'
+    at Error (native)
+[Thu Mar 10 2016 13:50:54 GMT+0800 (CST)] /
+ReferenceError: crud is not defined
+    at /home/yaodehaung/code/research/node/test/routes/index.js:8:14
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at next (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:100:13)
+    at Route.dispatch (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/route.js:81:3)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at /home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:235:24
+    at Function.proto.process_params (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:313:12)
+    at /home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:229:12
+    at Function.match_layer (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:296:3)
+    at next (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:190:10)
+[Sat Mar 12 2016 10:09:49 GMT+0800 (CST)] /
+Error: no open connections
+    at Db._executeQueryCommand (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1802:21)
+    at Cursor.nextObject (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:729:13)
+    at Cursor.nextObject (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/scope.js:22:20)
+    at Collection.findOne (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/collection/query.js:145:10)
+    at /home/yaodehaung/code/research/node/test/node_modules/connect-mongo/lib/connect-mongo.js:214:18
+    at MongoStore._get_collection (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/lib/connect-mongo.js:148:21)
+    at MongoStore.get (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/lib/connect-mongo.js:213:10)
+    at session (/home/yaodehaung/code/research/node/test/node_modules/express-session/index.js:356:11)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/layer.js:82:5)
+    at trim_prefix (/home/yaodehaung/code/research/node/test/node_modules/express/lib/router/index.js:271:13)
+[Mon Mar 14 2016 16:10:16 GMT+0800 (CST)] /post
+Error: Error setting TTL index on collection : sessions
+    at /home/yaodehaung/code/research/node/test/node_modules/connect-mongo/lib/connect-mongo.js:161:23
+    at /home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1404:28
+    at /home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1542:30
+    at /home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:159:22
+    at commandHandler (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:678:48)
+    at Db._executeQueryCommand (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1802:12)
+    at Cursor.nextObject (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:729:13)
+    at Cursor.toArray (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:158:10)
+    at Cursor.toArray (/home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/scope.js:10:20)
+    at /home/yaodehaung/code/research/node/test/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1541:65
+[Mon Apr 25 2016 21:56:09 GMT+0800 (CST)] /ajax.js
+Error: Error setting TTL index on collection : sessions
+    at /home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/lib/connect-mongo.js:161:23
+    at /home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1404:28
+    at /home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1542:30
+    at /home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:159:22
+    at commandHandler (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:678:48)
+    at /home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1806:9
+    at __executeQueryCommand (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1636:44)
+    at Db._executeQueryCommand (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/db.js:1805:7)
+    at Cursor.nextObject (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:729:13)
+    at Cursor.toArray (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:158:10)
+[Mon Apr 25 2016 21:56:09 GMT+0800 (CST)] /ractive.js
+Error: Cannot determine state of server
+    at canCheckoutReader (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/connection/server.js:767:12)
+    at Server.checkoutReader (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/connection/server.js:779:16)
+    at Cursor.nextObject (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:720:48)
+    at Cursor.nextObject (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/scope.js:22:20)
+    at Collection.findOne (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/collection/query.js:145:10)
+    at /home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/lib/connect-mongo.js:214:18
+    at MongoStore._get_collection (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/lib/connect-mongo.js:148:21)
+    at MongoStore.get (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/lib/connect-mongo.js:213:10)
+    at session (/home/yaodehaung/code/research/node/backend-crud/node_modules/express-session/index.js:356:11)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/backend-crud/node_modules/express/lib/router/layer.js:82:5)
+[Mon Apr 25 2016 21:56:09 GMT+0800 (CST)] /async.js
+Error: Cannot determine state of server
+    at canCheckoutReader (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/connection/server.js:767:12)
+    at Server.checkoutReader (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/connection/server.js:779:16)
+    at Cursor.nextObject (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/cursor.js:720:48)
+    at Cursor.nextObject (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/scope.js:22:20)
+    at Collection.findOne (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/node_modules/mongodb/lib/mongodb/collection/query.js:145:10)
+    at /home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/lib/connect-mongo.js:214:18
+    at MongoStore._get_collection (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/lib/connect-mongo.js:148:21)
+    at MongoStore.get (/home/yaodehaung/code/research/node/backend-crud/node_modules/connect-mongo/lib/connect-mongo.js:213:10)
+    at session (/home/yaodehaung/code/research/node/backend-crud/node_modules/express-session/index.js:356:11)
+    at Layer.handle [as handle_request] (/home/yaodehaung/code/research/node/backend-crud/node_modules/express/lib/router/layer.js:82:5)
