@@ -3286,3 +3286,8 @@
 ::ffff:127.0.0.1 - - [Mon, 25 Apr 2016 13:56:09 GMT] "GET /ractive.js HTTP/1.1" 404 23 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"
 ::ffff:127.0.0.1 - - [Mon, 25 Apr 2016 13:56:09 GMT] "GET /async.js HTTP/1.1" 404 21 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"
 ::ffff:127.0.0.1 - - [Mon, 25 Apr 2016 13:56:10 GMT] "GET / HTTP/1.1" 200 1697 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"
+::ffff:127.0.0.1 - - [Tue, 26 Apr 2016 08:10:15 GMT] "GET / HTTP/1.1" 200 1697 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"
+::ffff:127.0.0.1 - - [Tue, 26 Apr 2016 08:10:16 GMT] "GET /ajax.js HTTP/1.1" 200 1352 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"
+::ffff:127.0.0.1 - - [Tue, 26 Apr 2016 08:10:16 GMT] "GET /ractive.js HTTP/1.1" 200 2399 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"
+::ffff:127.0.0.1 - - [Tue, 26 Apr 2016 08:10:16 GMT] "GET /async.js HTTP/1.1" 200 38564 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"
+::ffff:127.0.0.1 - - [Tue, 26 Apr 2016 08:10:16 GMT] "GET /archive HTTP/1.1" 200 29 "http://localhost:3000/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36"
