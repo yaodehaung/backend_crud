@@ -28,7 +28,12 @@ app.use(favicon(__dirname + '/public/images/favicon.ico'));
 app.use(logger('dev'));
 app.use(logger({stream: accessLog}));
 app.use(bodyParser.urlencoded({ extended: false }));
-
+app.use(multer({
+  dest: './public/images',
+  rename: function (fieldname, filename) {
+    return filename;
+  }
+}));
 app.use(cookieParser());
 app.use(session({
   secret: settings.cookieSecret,

@@ -20,6 +20,8 @@ module.exports = function(app) {
       res.send("成功");//发表成功跳转到主页
     });
   });
+
+  
   app.get('/archive', function (req, res) {
     Post.getArchive(function (err, posts) {
       if (err) {
