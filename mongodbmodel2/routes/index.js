@@ -9,7 +9,7 @@ module.exports = function(app) {
   })
 
   app.post('/post', function(req, res) {
-    var post = new Post(req.body.title, req.body.post);
+    var post = new Post(req.body.name, req.body.post);
     post.save(function(err) {
       if (err) {
         return res.redirect('/');
@@ -54,7 +54,7 @@ module.exports = function(app) {
 
         return res.redirect(url); //出错！返回文章页
       }
-      req.flash('success', '修改成功!');
+      
       res.send('成功');
     });
   });
@@ -69,5 +69,5 @@ module.exports = function(app) {
     });
   });
 
-  
+
 };

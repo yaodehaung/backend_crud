@@ -1,4 +1,5 @@
 var mongodb = require('./db'),
+  markdown = require('markdown').markdown,
   ObjectID = require('mongodb').ObjectID;
 
 //建立一個類別存放post裡面
@@ -44,7 +45,7 @@ Post.prototype.save = function(callback) {
 };
 
 
-//返回所有文章存档信息
+//返回所有文章存檔信息
 Post.getArchive = function(callback) {
   //打开数据库
   mongodb.open(function(err, db) {
@@ -86,6 +87,7 @@ Post.update = function(name, post, callback) {
     }
     //读取 posts 集合
     db.collection('posts', function(err, collection) {
+      // new ObjectID(name) 中的名稱  是只每ㄧ資料的id
       var o_id = new ObjectID(name);
       if (err) {
         mongodb.close();
@@ -118,6 +120,7 @@ Post.remove = function(name, callback) {
     }
     //读取 posts 集合
     db.collection('posts', function(err, collection) {
+      // new ObjectID(name) 中的名稱  是只每ㄧ資料的id
       var o_id = new ObjectID(name);
       if (err) {
         mongodb.close();
@@ -150,6 +153,8 @@ Post.remove = function(name, callback) {
 
 Post.getOne = function(name, callback) {
   //打开数据库
+  debugger;
+  var o_id = new ObjectID(name);
 
   mongodb.open(function(err, db) {
     if (err) {
@@ -157,6 +162,7 @@ Post.getOne = function(name, callback) {
     }
     //读取 posts 集合
     db.collection('posts', function(err, collection) {
+      // new ObjectID(name) 中的名稱  是只每ㄧ資料的id
       var o_id = new ObjectID(name);
       if (err) {
         mongodb.close();
