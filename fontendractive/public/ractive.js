@@ -8,11 +8,8 @@ async.waterfall([
   console.log(response);
 });
 
-write();
 
-//function defind
-
-function write() {
+(function () {
   // id = input
   $('#input').on('click', function(e) {
     var input = {
@@ -41,7 +38,7 @@ function write() {
     });
 
   })
-}
+})();
 
 // 用ajax get 要資料 然後傳到testractive 中做粉刷
 function archivemethed(callback) {
