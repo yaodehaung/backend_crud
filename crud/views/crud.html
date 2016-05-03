@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>hello</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="ajax.js"></script>
+</head>
+
+<body>
+  <div class="">
+    <p style="color:red;">
+      顯示所有資料
+    </p>
+    archivemethed('/archive', function(response){console.log(response);});
+  </div>
+  <div class="">
+    <p style="color:red;">
+      寫資料
+    </p>
+    writemethod('/post' , '15:24' ,'15:24' );
+  </div>
+
+  <div class="">
+    <p style="color:red;">
+      編輯
+    </p>
+    editmethod('/edit/56e1210f4135828a138cf280','adf');
+  </div>
+  <div class="">
+    <p style="color:red;">
+      刪除
+    </p>
+    removemethod('/remove/56e1210f4135828a138cf280');
+  </div>
+  <input type='text' id='nameInput' placeholder='Name'>
+  <input type='text' id='messageInput' placeholder='Message'>
+  <button type="button" name="button" id="input" >write</button>
+  <div id="test">
+
+  </div>
+  <script id="ttest" type='text/ractive'>
+    <table class='superheroes'>
+      <tr>
+        <th>Superhero name</th>
+        <th>Real name</th>
+        <th>Superpower</th>
+      </tr>
+
+      {{#each greeting}}
+      <tr>
+        <td>{{_id}}</td>
+        <td>{{name}}</td>
+        <td>{{time.minute}}</td>
+        <td>{{title}}</td>
+        <button type="button" name="button" on-click='dm: _id'>X</button>
+        <button type="button" name="button" on-click='sign: _id'>edit</button>
+
+
+
+      </tr>
+      {{/each}}
+    </table>
+  </script>
+  <script src='http://cdn.ractivejs.org/latest/ractive.js'></script>
+  <script src="async.js" charset="utf-8"></script>
+  <script src="ractive.js"></script>
+
+
+
+</body>
+
+</html>
