@@ -6,7 +6,4 @@ module.exports = function(app) {
     req.send("hello world");
   });
 
-
-
-
 };

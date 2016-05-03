@@ -16,8 +16,8 @@ async.waterfall([
 function write(){
   $('#input').on('click',function(e){
     var input = {
-     "title": $('#nameInput').val(),
-      "post": $('#messageInput').val()
+     "name": $('#nameInput').val(),
+    "post": $('#messageInput').val()
     };
 
     $.ajax({

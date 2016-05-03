@@ -65,6 +65,7 @@ Post.getArchive = function(callback) {
         time: -1
       }).toArray(function(err, docs) {
         mongodb.close();
+        // 為什麼你關起來
         if (err) {
           return callback(err);
         }
