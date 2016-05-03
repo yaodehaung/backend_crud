@@ -17,7 +17,7 @@ function write(){
   $('#input').on('click',function(e){
     var input = {
      "name": $('#nameInput').val(),
-    "post": $('#messageInput').val()
+     "post": $('#messageInput').val()
     };
 
     $.ajax({
