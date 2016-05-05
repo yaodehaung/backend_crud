@@ -1,6 +1,4 @@
-var crypto = require('crypto'),
-    fs = require('fs'),
-    Post = require('../models/post.js');
+var Post = require('../models/post.js');
 
 module.exports = function(app) {
 

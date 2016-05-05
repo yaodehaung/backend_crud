@@ -1,12 +1,14 @@
 {
-  "name": "hello_world",
+  "name": "backenc_crud",
   "version": "1.0.0",
   "private": true,
-  "description": "hello_world for express4.x",
+  "description": "backenc_crud express4.x",
   "scripts": {
     "start": "node app"
   },
   "dependencies": {
-    "express": "4.10.2"
+    "express": "4.10.2",
+    "mongodb": "2.0.42"
+
   }
 }

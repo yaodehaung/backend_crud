@@ -1,6 +1,4 @@
-var crypto = require('crypto'),
-  fs = require('fs'),
-  Post = require('../models/post.js');
+var Post = require('../models/post.js');
 
 module.exports = function(app) {
 
@@ -54,7 +52,7 @@ module.exports = function(app) {
 
         return res.redirect(url); //出错！返回文章页
       }
-      
+
       res.send('成功');
     });
   });
